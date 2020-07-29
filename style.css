@@ -1,0 +1,197 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #00000000;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #e0e5ec;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.leftSide {
+  width: 50%;
+  height: 100%;
+  background: #e0e5ec;
+  box-shadow: 0.2rem 0.3rem 0.5rem rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.listZoneWrapper {
+  width: 100%;
+  height: 160rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.section__listZone {
+  width: 90%;
+  background: #e0e5ec;
+  border-radius: 10px;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  position: relative;
+  padding: 10px;
+  transition: all 0.5s;
+}
+
+.section__listZone:hover {
+  box-shadow: none;
+}
+
+.listZone--doingWhatWrapper {
+  border-top: 1px solid #888681;
+  background: #e0e5ec;
+  padding: 8px 8px;
+  width: 80%;
+}
+
+.listZone--startTime {
+  font-size: 1.5rem;
+}
+
+.listZone--endTime {
+  font-size: 1.5rem;
+}
+
+.listZone--doingWhat {
+}
+
+.listZone--category {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.7rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(57, 175, 28);
+  border-radius: 0 10px 10px 0;
+  color: aliceblue;
+}
+.listZone--deleteBtn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: -15px;
+  right: -10px;
+  font-size: 1rem;
+  background-color: rgb(255, 102, 133);
+  border-radius: 50%;
+}
+
+/* End of listZone */
+
+.section__inputZone {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.inputZone--startTime {
+  text-align: center;
+  border: none;
+  outline: none;
+  width: 70px;
+  height: 30px;
+
+  background: #e0e5ec;
+  border-radius: 10px;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+
+  font-size: 1.3rem;
+  border-radius: 4rem;
+  transition: 0.3s ease-in-out;
+}
+
+.inputZone--startTime:focus {
+  box-shadow: none;
+}
+
+.inputZone--endTime {
+  text-align: center;
+  border: none;
+  outline: none;
+  width: 70px;
+  height: 30px;
+
+  background: #e0e5ec;
+  border-radius: 10px;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+
+  font-size: 1.3rem;
+  border-radius: 4rem;
+  transition: 0.3s ease-in-out;
+}
+
+.inputZone--endTime:focus {
+  box-shadow: none;
+}
+
+.inputZone--doingWhat {
+  background: #e0e5ec;
+  border-radius: 10px;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  border: none;
+  outline: none;
+  width: 20rem;
+  height: 5rem;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  transition: 0.3s ease-in-out;
+  resize: none;
+}
+
+.inputZone--doingWhat:focus {
+  box-shadow: none;
+}
+
+.inputZone--category {
+  width: 7rem;
+  font-size: 1.3rem;
+  height: 30px;
+
+  border: none;
+  outline: none;
+  background: #e0e5ec;
+  border-radius: 10px;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9, 7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #fff9, inset 0px 0px 0px 0px #0001;
+  transition: 0.3s ease-in-out;
+}
+
+.inputZone--category:focus {
+  box-shadow: none;
+}
+
+.displayZone__inDay {
+  width: 40rem;
+  height: 40rem;
+  color: #888681;
+}
